@@ -1,0 +1,64 @@
+.albums {
+    padding: 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.alb {
+    transition: all 0.4s ease;
+    height: 25vw;
+    width: 25vw;
+    position: relative;
+    background-size: cover;
+}
+
+.alb>div {
+    transition: all 0.4s ease;
+    height: 25vw;
+    background-color: rgba(0,0,0,0);
+}
+
+.alb>div>h2, .alb>div>p {
+    opacity: 0;
+}
+
+.alb:hover>div {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.alb:hover >div> h2, .alb:hover >div > p {
+    opacity: 1;
+    z-index: 1000;
+}
+
+.alb>div {
+    padding: 55% 10% 4% 10%;
+}
+
+.alb>div>h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+@media (max-width: 900px) {
+    .alb>div {
+        background-color: rgba(0,0,0,0.8);
+    }
+    .alb >div> h2, .alb >div > p {
+        opacity: 1;
+        z-index: 1000;
+    }
+
+    .alb {
+        height: 80vw;
+        width: 80vw;
+        margin-left: 10vw;
+        margin-top: 3vh;
+    }
+    .alb> div {
+        height: 80vw;
+    }
+}

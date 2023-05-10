@@ -1,0 +1,46 @@
+section> ul  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 0 5vw;
+}
+
+section> ul > li {
+    list-style-type: none;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+
+    padding: 5vw;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 9vh;
+     font-size: 32px;
+}
+
+section>ul> li > img {
+    width: 35vw;
+    height: 35vw;
+}
+
+.text {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 3vh;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+@media ( max-width: 900px ){
+    section> ul > li {
+        width: 80vw;
+    }
+    section>ul> li > img {
+        width: 80vw;
+        height: 80vw;
+    }
+}

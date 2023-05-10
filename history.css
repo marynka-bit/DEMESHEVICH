@@ -1,0 +1,26 @@
+.container {
+    width: 80vw;
+    margin: 5vh 10vw 5vh 10vw;
+}
+
+.container p {
+    hyphens: auto;
+}
+h1, h2 {
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+    letter-spacing: 1px;
+}
+
+.text > div {
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 1vh;
+    text-indent: 2vw;
+}
+
+.container > img {
+    width: 80vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
